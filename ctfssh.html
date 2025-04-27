@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge - Top 10 Superbikes 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #e5e7eb;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #1f2937;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+        tr:hover {
+            background-color: #e5e7eb;
+        }
+        .hint-container {
+            display: none;
+        }
+        .hint-container.show {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-6">CTF Challenge: Top 10 Superbikes of 2025</h1>
+        <p class="text-lg text-center text-gray-600 mb-4">Explore the specs of the world's best superbikes. Can you uncover the key to access the secret server?</p>
+        <p class="text-md text-center text-gray-500 mb-8">Hint: 🐙 Surface’s clean, but the code’s murky. Dive in.</p>
+
+        <div class="overflow-x-auto">
+            <table class="min-w-full">
+                <thead>
+                    <tr>
+                        <th>Bike Model</th>
+                        <th>Engine Size</th>
+                        <th>Power</th>
+                        <th>Weight</th>
+                        <th>Seat Height</th>
+                        <th>Engine Number</th>
+                        <th>Chassis Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ducati Panigale V4S</td>
+                        <td>1103cc</td>
+                        <td>213 bhp</td>
+                        <td>187 kg (dry)</td>
+                        <td>850 mm</td>
+                        <td>XFUSR_2025_C7F</td>
+                        <td>DPV4S-2025-001</td>
+                    </tr>
+                    <tr>
+                        <td>Aprilia RSV4 1100 Factory</td>
+                        <td>1099cc</td>
+                        <td>220 bhp</td>
+                        <td>202 kg (wet)</td>
+                        <td>853 mm</td>
+                        <td>APRRSV4-2025-002</td>
+                        <td>RSV4-2025-004</td>
+                    </tr>
+                    <tr>
+                        <td>BMW S1000RR</td>
+                        <td>999cc</td>
+                        <td>207 bhp</td>
+                        <td>198 kg (wet)</td>
+                        <td>832 mm</td>
+                        <td>BS1RR-2025-003</td>
+                        <td>S1RR-2025-003</td>
+                    </tr>
+                    <tr>
+                        <td>Yamaha YZF-R1</td>
+                        <td>998cc</td>
+                        <td>200 bhp</td>
+                        <td>201 kg (wet)</td>
+                        <td>855 mm</td>
+                        <td>YZFR1-2025-004</td>
+                        <td>R1-2025-004</td>
+                    </tr>
+                    <tr>
+                        <td>Kawasaki Ninja ZX-10R</td>
+                        <td>998cc</td>
+                        <td>203 bhp</td>
+                        <td>207 kg (wet)</td>
+                        <td>835 mm</td>
+                        <td>ZX10R-2025-005</td>
+                        <td>10R-2022-009</td>
+                    </tr>
+                    <tr>
+                        <td>Honda CBR1000RR-R Fireblade SP</td>
+                        <td>999cc</td>
+                        <td>214 bhp</td>
+                        <td>201 kg (wet)</td>
+                        <td>830 mm</td>
+                        <td>CBR1K-2025-006</td>
+                        <td>FIRE-2025-006</td>
+                    </tr>
+                    <tr>
+                        <td>Suzuki GSX-R1000</td>
+                        <td>999cc</td>
+                        <td>199 bhp</td>
+                        <td>203 kg (wet)</td>
+                        <td>825 mm</td>
+                        <td>GSXR1K-2025-007</td>
+                        <td>GSXR-2025-007</td>
+                    </tr>
+                    <tr>
+                        <td>MV Agusta F3 800 RR</td>
+                        <td>798cc</td>
+                        <td>155 bhp</td>
+                        <td>173 kg (dry)</td>
+                        <td>830 mm</td>
+                        <td>F3RR-2025-008</td>
+                        <td>MVAF3-2025-008</td>
+                    </tr>
+                    <tr>
+                        <td>Triumph Daytona 765</td>
+                        <td>765cc</td>
+                        <td>128 bhp</td>
+                        <td>185 kg (dry)</td>
+                        <td>820 mm</td>
+                        <td>DAY765-2025-009</td>
+                        <td>TR765-2025-009</td>
+                    </tr>
+                    <tr>
+                        <td>KTM 990 Duke</td>
+                        <td>947cc</td>
+                        <td>123 bhp</td>
+                        <td>190 kg (dry)</td>
+                        <td>825 mm</td>
+                        <td>DUKE990-2025-010</td>
+                        <td>KTM990-2025-010</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="flex: 1;">
+                <b>2017th – "Most Beautiful Bike of Show" at EICMA</b>
+                <p>
+                    The Ducati Panigale V4 was voted the “Most Beautiful Bike of Show” at EICMA 2017, securing over 61% of the votes from more than 16,000 enthusiasts. This marked Ducati's ninth win in this category, underscoring the V4's striking design and appeal.
+                </p>
+            </div>
+            <div>
+                <a href="https://s3.ap-south-1.amazonaws.com/main.file/ctfubuntu.pem" target="_blank">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/223/13/204/2019-ducati-panigale-v4-r-4k-wallpaper-preview.jpg" alt="Clickable Image" style="width: 200px; margin-left: 20px;">
+                </a>
+            </div>
+        </div>
+        <div class="mt-12 p-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg text-center">
+            <h2 class="text-2xl font-bold mb-2">All the Best!</h2>
+            <p class="text-lg">Ride to Victory in this CTF Challenge!</p>
+        </div>
+
+        <div class="mt-6 text-center">
+            <button id="hint2Button" class="px-6 py-3 bg-gradient-to-r from-green-500 to-teal-600 text-white font-bold rounded-lg shadow-md hover:from-green-600 hover:to-teal-700 transition duration-300">Hint 2</button>
+        </div>
+        <div id="hint2Container" class="mt-6 p-6 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-lg shadow-lg text-center hint-container">
+            <h3 class="text-xl font-bold mb-2"></h3>
+            <p class="text-lg">Hey... have you ever even touched a Panigale? Felt that raw power under your hands?</p>
+        </div>
+
+        <script>
+            // Hidden credentials for the CTF challenge
+            // SSH Access:
+            // Username: XFUSR_2025_C7F
+            // Password: S3C10-2025-5ECR
+            // Server: 13.201.20.103
+            // Port: 22
+            // pemFILE : check with the website dude
+            console.log("Rev up your engines, but don't forget to check the source!");
+
+            // Toggle Hint 2 visibility
+            document.getElementById('hint2Button').addEventListener('click', function() {
+                const hintContainer = document.getElementById('hint2Container');
+                hintContainer.classList.toggle('show');
+            });
+        </script>
+    </div>
+</body>
+</html>
